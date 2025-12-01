@@ -1,0 +1,118 @@
+Guía Visual: Subir tu Cuaderno de Ideas a GitHub desde VS Code
+1️⃣ Abrir tu proyecto en VS Code
+
+Abre VS Code.
+
+Menú → Archivo → Abrir carpeta…
+
+Selecciona la carpeta donde está tu cuaderno de ideas (MisIdeasCuadros).
+
+En VS Code verás algo así en el explorador de archivos (a la izquierda):
+
+MisIdeasCuadros/
+ ├─ idea1.txt
+ ├─ idea2.txt
+ ├─ dibujos/
+ └─ ...
+
+2️⃣ Abrir la terminal integrada
+
+Menú → Terminal → Nueva Terminal
+
+Aparecerá algo como esto abajo:
+
+Ryoga@DESKTOP-6H4ENU6 MINGW64 /h/.../MisIdeasCuadros
+$
+
+
+Esta terminal está en la carpeta de tu proyecto, lista para comandos de Git.
+
+3️⃣ Inicializar Git
+
+En la terminal escribe:
+
+git init
+
+
+💡 Esto convierte la carpeta en un repositorio Git local.
+Ahora verás que VS Code detecta Git: en la barra lateral izquierda aparece el icono de control de versiones (🔄).
+
+4️⃣ Configurar tu identidad de Git
+
+Si no lo habías hecho antes, escribe:
+
+git config --global user.name "EladioTech"
+git config --global user.email "eladio.rey@aol.com"
+
+
+💡 Esto le dice a Git quién hace los commits. Solo se hace una vez en tu equipo.
+
+5️⃣ Crear un repositorio en GitHub
+
+Ve a GitHub
+ → tu perfil → New repository.
+
+Nombre del repositorio: cuaderno-de-ideas
+
+No marques “Initialize with README”
+
+Clic en Create repository
+
+Copia el enlace HTTPS que te da GitHub:
+
+https://github.com/EladioTech/cuaderno-de-ideas.git
+
+6️⃣ Conectar tu repositorio local con GitHub
+
+En la terminal:
+
+git remote add origin https://github.com/EladioTech/cuaderno-de-ideas.git
+
+
+Esto le dice a Git: “Aquí está mi repositorio remoto en GitHub”.
+
+7️⃣ Añadir tus archivos al área de preparación
+git add .
+
+
+💡 El . significa “todos los archivos”.
+Ahora VS Code mostrará los archivos listos para commit en la pestaña Control de versiones (🔄).
+
+8️⃣ Hacer un commit
+git commit -m "Subir Cuaderno de Ideas completo"
+
+
+💡 Esto guarda un punto en el historial de Git.
+En VS Code verás que los archivos ya no están resaltados como cambios pendientes.
+
+9️⃣ Renombrar la rama a main (opcional, recomendable)
+git branch -M main
+
+
+💡 Esto hace que tu rama principal siga la convención moderna de GitHub.
+
+🔟 Subir tus archivos a GitHub
+git push -u origin main
+
+
+-u origin main → configura Git para recordar dónde subir la próxima vez.
+
+VS Code puede pedir tu usuario y token de GitHub (contraseña no funciona si tienes autenticación moderna).
+
+Una vez hecho esto, tu cuaderno estará en la nube y accesible desde cualquier PC.
+
+11️⃣ Atajo visual desde VS Code
+
+Si quieres, en VS Code también puedes usar los botones sin escribir nada:
+
+Click en Control de versiones (🔄)
+
+Verás los archivos listados en Cambios
+
+Click en el + para “staging”
+
+Escribe un mensaje de commit en la caja arriba → click en ✅
+
+Click en … → Push para subir a GitHub
+
+Todo esto hace lo mismo que los comandos que te di.
