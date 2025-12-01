@@ -1,0 +1,71 @@
+subir tu “Cuaderno de ideas” a GitHub:
+
+1️⃣ Preparar la carpeta local como repositorio Git
+
+Abre VS Code.
+
+Abre la carpeta donde tienes tu cuaderno de ideas (MisIdeasCuadros).
+
+Abre la terminal integrada en VS Code:
+Menú → Terminal → Nueva Terminal.
+
+Inicializa Git en esa carpeta:
+
+git init
+
+
+Ahora tu carpeta es un repositorio Git local.
+
+--------------------------------------------
+
+2️⃣ Conectar con GitHub
+
+Primero, crea un nuevo repositorio en GitHub:
+
+Ve a GitHub
+ → tu perfil → “New repository”.
+
+Ponle un nombre (por ejemplo cuaderno-de-ideas).
+
+No marques “Initialize with README” (ya tenemos los archivos locales).
+
+Clic en “Create repository”.
+
+Después, GitHub te dará un enlace como:
+
+https://github.com/EladioTech/cuaderno-de-ideas.git
+
+En VS Code, conecta tu repositorio local con GitHub:
+
+git remote add origin https://github.com/EladioTech/cuaderno-de-ideas.git
+
+---------------------------------------------------
+
+3️⃣ Añadir tus archivos al repositorio
+
+git add .
+
+El . significa que añadimos todos los archivos.
+
+------------------------------------------------------
+
+4️⃣ Hacer un commit (guardar cambios localmente)
+
+git commit -m "Subir Cuaderno de Ideas completo"
+
+--------------------------------------------------------
+
+5️⃣ Subir los archivos a GitHub (push)
+
+Si tu rama principal es main:
+
+git branch -M main
+git push -u origin main
+
+git branch -M main asegura que tu rama local se llama main.
+
+-u origin main configura Git para recordar a dónde subir la próxima vez (solo se hace la primera vez).
+
+----------------------------------------------------------
+
+✅ Con esto, tu cuaderno de ideas estará en GitHub y accesible desde cualquier PC.
