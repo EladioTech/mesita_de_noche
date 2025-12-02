@@ -1,0 +1,16 @@
+Entra en GitHub y abre el repositorio que quieres borrar.
+
+Arriba, ve a la pestaña Settings (está a la derecha).
+
+Desplázate hasta abajo del todo, hasta la sección Danger Zone (zona roja).
+
+Busca la opción Delete this repository.
+
+GitHub te pedirá que escribas el nombre completo del repo para confirmar, por ejemplo:
+
+EladioTech/mi-repo-que-quiero-borrar
+
+
+Pulsa I understand the consequences, delete this repository.
+
+¡Y listo! Ese repo desaparece para siempre.
