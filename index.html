@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ideas para Cuadros - SantaCruz</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <h1>🎨 Registro de Ideas para Cuadros</h1>
 
@@ -15,6 +17,10 @@
     <div class="botones">
       <button id="agregar">➕ Añadir idea</button>
       <button id="exportar">📄 Exportar a PDF</button>
+      <button id="btnExport">💾 Exportar JSON</button>
+      <button id="btnImport">📂 Importar JSON</button>
+      <input type="file" id="fileInput" accept="application/json" hidden>
+
     </div>
   </div>
 
@@ -23,4 +29,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
