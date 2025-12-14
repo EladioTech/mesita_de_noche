@@ -1,8 +1,6 @@
-# Datos personales
+# Datos y contenidos personales
 *.json
 *.pdf
-
-# Notas privadas
 *.txt
 
 # Editor
