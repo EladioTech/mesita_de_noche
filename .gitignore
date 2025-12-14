@@ -1,0 +1,13 @@
+# Datos personales
+*.json
+*.pdf
+
+# Notas privadas
+*.txt
+
+# Editor
+.vscode/
+
+# Sistema
+.DS_Store
+Thumbs.db
